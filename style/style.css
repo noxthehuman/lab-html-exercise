@@ -6,7 +6,7 @@ html, body {
 }
 
 header > div{
-  padding: 0 25px;
+  padding: 0.25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,21 +36,33 @@ nav a {
 
 .logoNpm {
     width: 60px;
-    margin-right: 1rem;
 }
 
 .searchLogo {
     width: 20px;
-    margin-top: 1rem;
 }
 
 .ligne-header {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 5px;
 }
 
-.ligne-header  > div > a {
-    border: 1px solid auto black;
+.ligne-header > form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 5px;
+
+}
+
+#join {
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 5px;
 }
 
 .search {
@@ -60,13 +72,20 @@ nav a {
     color: white;
 }
 
-header form, input{
+header > div > form > input {
+    width: 75vw;
+    background: transparent;
+    border: none;
+}
+
+header form, input {
     background-color: rgba(0, 0, 0, .05);
-    label-color: rgba(0, 0, 0, .05);
+    color: rgba(0, 0, 0, .05);
     border-style: none;
-    background-height: 2.5em;
+    height: 100%;
     flex-wrap: wrap;
 }
+
 
 #section1 {
     height: 600px;
@@ -89,7 +108,7 @@ header form, input{
 
 #section1 heading {
     font-size: 70px;
-    font-style: 'strong';
+    font-style: 'bold';
 }
 
 .see-plans {
@@ -102,10 +121,12 @@ header form, input{
 .see-plans a {
     color: white;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .join {
-    background: none;
+    background: white;
+    padding: 15px 40px;
     border-style: none;
 }
 
@@ -128,7 +149,7 @@ a {
 }
 
 article {
-    font-style: 'strong';
+    font-style: 'bold';
     width: 40%;
     margin-bottom: 20px;
     display: flex;
@@ -154,6 +175,7 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .rangement-section3 {
@@ -165,9 +187,17 @@ article {
     margin : 60px;
 }
 
-.rangement-section3 div {
-    padding: 20px;
+.rangement-section3 > div{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: space-between;
+    width: 90%;
+    margin : 20px;
+    padding: 0;
+    
 }
+
 
 #section3 heading {
     color: #ED1C24;
@@ -176,10 +206,11 @@ article {
 #section3 > button {
     background-color: black;
     color: white;
-    padding: 10px 30px;
+    padding: 10px 50px;
     box-shadow: 8px 8px 0 rgba(128,83,35,.2);
 }
 
 .sec3-images {
     width: 30px;
+    margin-bottom: 10px;
 }
